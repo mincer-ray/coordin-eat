@@ -10,6 +10,8 @@ import {Button} from 'react-bootstrap'
 const AuthForm = (props) => {
 	const {name, displayName, handleSubmit, needsname, error} = props
 
+	console.log("authform rendered")
+
 	return (
 		<div>
 			<form onSubmit={handleSubmit} name={name}>

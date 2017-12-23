@@ -50,6 +50,8 @@ export default class navbarInstance extends Component {
 		const isLoggedIn = this.state.isLoggedIn
 		const handleClick = this.state.handleClick
 
+		console.log("navbar renders")
+
 		return (
 			<Navbar collapseOnSelect fixedTop={true} className="noMargin"
 				expanded={this.state.navToggle}

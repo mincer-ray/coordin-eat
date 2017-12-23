@@ -6,23 +6,25 @@ import {logout} from '../store'
 import Navbar from './Navbar'
 
 
-/**
- * COMPONENT
- *  The Main component is our 'picture frame' - it displays the navbar and anything
- *  else common to our entire app. The 'picture' inside the frame is the space
- *  rendered out by the component's `children`.
- */
+
 const Main = (props) => {
 	const {children, handleClick, isLoggedIn} = props
+
+	console.log("main renders")
+
 	return (
 		<div>
 			<div className='backgroundAccentColor'>
 				<Navbar isLoggedIn={isLoggedIn} handleClick={handleClick}/>
 			</div>
 			<hr className='noMargin hrColor'/>
+
 			<div className='backgroundAccentColorLight fontAccentColor contentDiv'>
 				{children}
 			</div>
+
+
+
 		</div>
 	)
 }

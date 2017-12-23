@@ -22,6 +22,8 @@ const TripDetails = (props) => {
 		}
 
 
+		console.log("userProfile renders")
+
 		return (
 			<div>
 				<Row>
